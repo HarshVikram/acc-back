@@ -17,9 +17,9 @@ const {
 
 router.get("/product/:productId", read);
 
-router.post("/product/create/1234", create);
-router.delete("/product/:productId/1234", remove);
-router.put("/product/:productId/1234", update);
+router.post("/product/create/Canvas@123", create);
+router.delete("/product/:productId/Canvas@123", remove);
+router.put("/product/:productId/Canvas@123", update);
 
 router.get("/products", list);
 router.get("/products/search", listSearch);

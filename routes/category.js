@@ -4,10 +4,10 @@ const router = express.Router();
 const { categoryById, create, read, update, remove, list } = require('../controllers/category');
 
 router.get('/category/:categoryId', read);
-router.post('/category/create/1234', create);
-router.put('/category/:categoryId/1234', update);
+router.post('/category/create/Canvas@123', create);
+router.put('/category/:categoryId/Canvas@123', update);
 
-router.delete('/category/:categoryId/1234', remove);
+router.delete('/category/:categoryId/Canvas@123', remove);
 router.get('/categories', list);
 
 router.param('categoryId', categoryById);

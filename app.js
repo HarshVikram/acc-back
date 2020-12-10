@@ -11,6 +11,14 @@ const productRoutes = require('./routes/product');
 
 const app = express();
 
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://acc_admin:Canvas@123@cluster0.81nbn.mongodb.net/acc-back?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   client.close();
+// });
+
 mongoose
     .connect(process.env.DATABASE, {
         useNewUrlParser: true,
@@ -21,6 +29,10 @@ mongoose
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cors());
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin": "*")
+}) 
 
 app.use('/', userRoutes);
 app.use('/', categoryRoutes);

@@ -1,6 +1,7 @@
 {
   "name": "acc-back",
   "version": "1.0.0",
+  "homepage": "http://test.blueskysoftech.com",
   "description": "",
   "main": "index.js",
   "scripts": {
