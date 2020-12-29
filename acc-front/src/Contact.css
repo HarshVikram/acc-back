@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+
+.contact-container {
+	background-color: #ff8636;
+	border-radius: 15px;
+	margin: 5em;
+	padding: 2em 3em 3em;
+}
+
+.contact-info {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contact-details {
+	width: 50%;
+}
+
+.contact-header {
+	font-family: 'Zilla Slab', serif;
+	color: black;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 760px) {
+	.contact-details {
+		font-size: 27px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact-header {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.contact-header {
+		font-size: 22px;
+	}
+	.contact-container {
+		margin: 3.5em;
+		padding: 1.5em 2em 2em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contact-header {
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.contact-header {
+		font-size: 15px;
+	}
+	.contact-container {
+		margin: 3em;
+		padding: 1.2em 1.6em 1.6em;
+	}
+}
